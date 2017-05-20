@@ -35,7 +35,9 @@ void LiquidCrystal_I2C::begin(int8_t sda, int8_t scl) {
     if(sda == -1 || scl == -1){
 	    Wire.begin();
     } else {
+#ifdef ESP32
         Wire.begin(sda, scl);
+#endif
     }
     for(int8_t i=0;i<2; i++){
 	    _displayfunction = LCD_4BITMODE | LCD_1LINE | LCD_5x8DOTS;
