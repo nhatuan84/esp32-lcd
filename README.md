@@ -1,4 +1,5 @@
-the original version is for Arduino, I modified a little to adapt with esp32.
+visit IOTSHARING.COM for more
+the original version is for Arduino, I modified a little to adapt with esp32. 
 
 # Installation #
 Create a new folder called "LiquidCrystal_I2C" under the folder named "libraries" in your Arduino sketchbook folder.
